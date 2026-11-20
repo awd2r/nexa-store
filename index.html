@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#6d28d9">
+  <title>NEXA STORE | المتجر الرسمي</title>
+  <meta name="description" content="NEXA STORE — وجهتك للتقنية والمنتجات الرقمية والإلكترونية.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&display=swap');
+    :root{--bg:#0d0818;--panel:#171027;--panel2:#211538;--purple:#8b5cf6;--purple2:#6d28d9;--text:#f8f5ff;--muted:#b9abcF;--line:#ffffff18}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#51228c 0,transparent 48%),var(--bg);color:var(--text);font-family:Alexandria,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#100a1ddd;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:2px;font-size:22px}.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#a78bfa,#5b21b6);display:grid;place-items:center;box-shadow:0 0 28px #8b5cf655;font-size:19px}
+    .navlinks{display:flex;gap:25px;color:var(--muted);font-size:13px}.navlinks a:hover{color:white}.actions{display:flex;gap:10px;align-items:center}
+    button,.btn{border:0;border-radius:12px;padding:12px 17px;background:linear-gradient(135deg,var(--purple),var(--purple2));color:white;font:600 13px Alexandria;cursor:pointer}.ghost{background:#ffffff10;border:1px solid var(--line)}
+    .hero{padding:86px 0 65px;text-align:center}.eyebrow{display:inline-block;border:1px solid #a78bfa55;background:#8b5cf61a;color:#d8c8ff;border-radius:30px;padding:8px 15px;font-size:12px}
+    h1{font-size:clamp(38px,7vw,68px);line-height:1.25;margin:22px 0 12px;letter-spacing:1px}h1 span{background:linear-gradient(90deg,#c4b5fd,#8b5cf6,#e9d5ff);background-clip:text;color:transparent}
+    .lead{color:var(--muted);font-size:15px;line-height:2;max-width:650px;margin:0 auto 25px}.heroBtns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .trust{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:48px;color:#d4c8e8;font-size:12px}.trust span:before{content:'✦';color:#a78bfa;margin-left:8px}
+    .section{padding:40px 0 70px}.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:22px}.sectionHead h2{margin:0;font-size:25px}.sectionHead p{margin:7px 0 0;color:var(--muted);font-size:12px}
+    .tools{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.search{flex:1;min-width:190px;background:#ffffff0c;border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:white;font:13px Alexandria;outline:none}
+    .categories{display:flex;gap:8px;flex-wrap:wrap}.cat{background:#ffffff0c;border:1px solid var(--line);color:#d9cfee;padding:10px 15px;border-radius:30px;font:12px Alexandria;cursor:pointer}.cat.active{background:#8b5cf633;border-color:#a78bfa}
+    .empty{background:linear-gradient(145deg,#1b1230,#120d20);border:1px solid var(--line);border-radius:20px;padding:48px 20px;text-align:center;color:var(--muted)}.empty strong{display:block;color:white;font-size:16px;margin:12px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.feature{padding:22px;background:#ffffff08;border:1px solid var(--line);border-radius:17px}.feature b{display:block;margin:9px 0;font-size:14px}.feature p{margin:0;color:var(--muted);font-size:12px;line-height:1.9}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:11px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:700px){.navlinks{display:none}.hero{padding:65px 0 45px}.features{grid-template-columns:1fr}.sectionHead{align-items:start;flex-direction:column}.brand{font-size:18px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span class="mark">N</span><span>NEXA <span style="color:#a78bfa">STORE</span></span></a>
+  <nav class="navlinks"><a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#features">مميزاتنا</a></nav>
+  <div class="actions"><button class="ghost" id="langBtn">EN</button><button onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})">تصفح المتجر</button></div>
+</div></header>
+<main>
+<section class="hero wrap" id="home">
+  <span class="eyebrow">✦ أهلاً بك في عالم NEXA</span>
+  <h1>كل ما تحتاجه،<br><span>في مكان واحد</span></h1>
+  <p class="lead">اكتشف مجموعة مختارة من المنتجات الإلكترونية والمنتجات الرقمية، بتجربة تسوق سهلة وسريعة.</p>
+  <div class="heroBtns"><a class="btn" href="#products">اكتشف المنتجات</a><a class="btn ghost" href="#features">تعرف علينا</a></div>
+  <div class="trust"><span>تجربة تسوق سهلة</span><span>دعم ومتابعة للطلبات</span><span>أسعار بالريال العماني</span></div>
+</section>
+<section class="section wrap" id="products">
+  <div class="sectionHead"><div><h2>منتجاتنا</h2><p>تصفح المنتجات واختر ما يناسبك</p></div></div>
+  <div class="tools"><input class="search" id="search" placeholder="ابحث عن منتج..." aria-label="ابحث عن منتج"><div class="categories"><button class="cat active">الكل</button><button class="cat">إلكترونيات</button><button class="cat">منتجات رقمية</button><button class="cat">إكسسوارات</button></div></div>
+  <div class="empty"><div style="font-size:34px">✧</div><strong>قريباً نعرض لكم منتجات NEXA STORE</strong>نعمل على تجهيز كتالوج المنتجات. ستظهر المنتجات هنا مع الصور والأسعار والتفاصيل.</div>
+</section>
+<section class="section wrap" id="features">
+  <div class="sectionHead"><div><h2>تجربة NEXA</h2><p>تسوق بثقة وبخطوات واضحة</p></div></div>
+  <div class="features">
+    <article class="feature"><div>🛍️</div><b>تصفح بسهولة</b><p>استعرض المنتجات وابحث عن احتياجك بسرعة.</p></article>
+    <article class="feature"><div>📦</div><b>متابعة الطلب</b><p>تابع حالة طلبك وتفاصيله بعد إرساله.</p></article>
+    <article class="feature"><div>💬</div><b>تواصل مباشر</b><p>فريقنا جاهز لمساعدتك والإجابة عن استفساراتك.</p></article>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> NEXA STORE. جميع الحقوق محفوظة.</span><span>Made with care · Oman</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
